@@ -1,6 +1,6 @@
 class BlogPostsController < ApplicationController
   def index
-   @blog_posts = BlogPost.all
+    @blog_posts = BlogPost.all
   end
 
   def show
@@ -19,6 +19,19 @@ class BlogPostsController < ApplicationController
       redirect_to @blog_post
     else
       render :new, status: :unprocessable_entity #error status POST 422
+    end
+  end
+
+  def edit
+    @blog_post = BlogPost.find(params[:id])
+  end
+
+  def update
+    @blog_post = BlogPost.find(params[:id])
+    if @blog_post.update(blog_post_params)
+      redirect_to @blog_post
+    else
+      render :edit, status: :unprocessable_entity
     end
   end
 
