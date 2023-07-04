@@ -8,4 +8,9 @@ class BlogPostsController < ApplicationController
   rescue ActiveRecord::RecordNotFound
     redirect_to root_path # status code 302 Found
   end
+
+  def new
+    @blog_post = BlogPost.new
+  end
+
 end
