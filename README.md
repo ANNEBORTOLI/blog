@@ -23,4 +23,6 @@ Things you may want to cover:
 
 - ...
 
-## rodar com bin/dev
+- run com bin/dev
+
+- URL: https://learning-path-blog-73wd.onrender.com/blog_posts
