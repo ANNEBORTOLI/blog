@@ -26,3 +26,4 @@ Things you may want to cover:
 - run com bin/dev
 
 - URL: https://learning-path-blog-73wd.onrender.com/blog_posts
+- Run tests: rails test test/models/blog_post_test.rb
